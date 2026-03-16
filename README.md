@@ -14,7 +14,7 @@ A Claude Code plugin that bundles MCP servers for daily workflow tools. Currentl
 
 ```bash
 # Register the marketplace
-claude plugin marketplace add <your-github-username>/nexus
+claude plugin marketplace add Piyu7994/nexus
 
 # Install the plugin
 claude plugin install nexus@nexus
@@ -23,7 +23,7 @@ claude plugin install nexus@nexus
 ### Option 2: Local development (session-only)
 
 ```bash
-git clone <repo-url> nexus
+git clone https://github.com/Piyu7994/nexus.git nexus
 claude --plugin-dir /path/to/nexus/plugin
 ```
 
