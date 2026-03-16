@@ -1,5 +1,5 @@
 {
-  "name": "mcp-hub",
+  "name": "nexus",
   "owner": {
     "name": "Piyush"
   },
@@ -8,9 +8,9 @@
   },
   "plugins": [
     {
-      "name": "mcp-hub",
+      "name": "nexus",
       "source": "./plugin",
-      "description": "MCP server hub — Jira, Figma, Firebase and more via official MCP servers",
+      "description": "MCP server nexus — Jira, Figma, Firebase and more via official MCP servers",
       "version": "0.1.0"
     }
   ]

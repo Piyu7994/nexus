@@ -1,5 +1,5 @@
 {
-  "name": "mcp-hub",
+  "name": "nexus",
   "version": "0.1.0",
   "description": "Extensible Claude Code plugin that bundles MCP servers for daily workflow tools. Start with Jira, expand to Figma, Firebase, and more.",
   "author": {

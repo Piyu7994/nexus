@@ -1,4 +1,4 @@
-# MCP Hub Plugin
+# Nexus Plugin
 
 ## What This Is
 A Claude Code plugin that bundles MCP servers for daily workflow tools.

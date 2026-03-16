@@ -1,4 +1,4 @@
-# MCP Hub
+# Nexus
 
 A Claude Code plugin that bundles MCP servers for daily workflow tools. Currently supports **Jira** via the official Atlassian MCP server.
 
@@ -14,23 +14,23 @@ A Claude Code plugin that bundles MCP servers for daily workflow tools. Currentl
 
 ```bash
 # Register the marketplace
-claude plugin marketplace add <your-github-username>/mcp-hub
+claude plugin marketplace add <your-github-username>/nexus
 
 # Install the plugin
-claude plugin install mcp-hub@mcp-hub
+claude plugin install nexus@nexus
 ```
 
 ### Option 2: Local development (session-only)
 
 ```bash
-git clone <repo-url> mcp-hub
-claude --plugin-dir /path/to/mcp-hub/plugin
+git clone <repo-url> nexus
+claude --plugin-dir /path/to/nexus/plugin
 ```
 
 ## First-Time Setup
 
 1. Start Claude Code with the plugin loaded
-2. Type `/mcp-hub:jira`
+2. Type `/nexus:jira`
 3. A browser window will open for **Atlassian OAuth** — sign in and authorize access to your Jira instance
 4. Once authorized, the command will confirm the connection is ready
 
@@ -39,26 +39,26 @@ That's it. OAuth tokens are managed automatically by `mcp-remote`.
 ## Usage
 
 ```
-/mcp-hub:jira <what you want to do>
+/nexus:jira <what you want to do>
 ```
 
 ### Examples
 
 | Command | What it does |
 |---------|-------------|
-| `/mcp-hub:jira search open bugs in PROJ` | Search issues using JQL |
-| `/mcp-hub:jira create a story in PROJ` | Create a single Jira issue |
-| `/mcp-hub:jira update story points on PROJ-123 to 5` | Update issue fields |
-| `/mcp-hub:jira move PROJ-123 to In Progress` | Transition issue status |
-| `/mcp-hub:jira assign PROJ-123 to alice@company.com` | Assign a team member |
-| `/mcp-hub:jira break down feature from spec.md into PROJ-100` | Generate a full ticket hierarchy (stories, tasks, subtasks) under an epic from a feature spec |
+| `/nexus:jira search open bugs in PROJ` | Search issues using JQL |
+| `/nexus:jira create a story in PROJ` | Create a single Jira issue |
+| `/nexus:jira update story points on PROJ-123 to 5` | Update issue fields |
+| `/nexus:jira move PROJ-123 to In Progress` | Transition issue status |
+| `/nexus:jira assign PROJ-123 to alice@company.com` | Assign a team member |
+| `/nexus:jira break down feature from spec.md into PROJ-100` | Generate a full ticket hierarchy (stories, tasks, subtasks) under an epic from a feature spec |
 
 ### Feature Breakdown
 
 The most powerful workflow — give it a feature spec and an epic key:
 
 ```
-/mcp-hub:jira break down feature from docs/feature-spec.md into PROJ-100
+/nexus:jira break down feature from docs/feature-spec.md into PROJ-100
 ```
 
 It will:

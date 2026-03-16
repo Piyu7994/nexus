@@ -20,10 +20,10 @@ This skill activates when the user mentions Jira-related work in conversation.
 
 ## What To Do
 
-Invoke `/mcp-hub:jira` with the user's request. The jira command handles everything — MCP setup detection, project context loading, and all Jira workflows.
+Invoke `/nexus:jira` with the user's request. The jira command handles everything — MCP setup detection, project context loading, and all Jira workflows.
 
 If the user says something like "break down this feature into Jira tickets", ask them for:
 1. The feature spec (file path or description)
 2. The epic key to create tickets under
 
-Then invoke `/mcp-hub:jira break down feature from [spec] into [EPIC-KEY]`
+Then invoke `/nexus:jira break down feature from [spec] into [EPIC-KEY]`

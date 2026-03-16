@@ -1,19 +1,19 @@
 ---
 description: Work with Jira — setup, create issues, break down features into ticket hierarchies, update story points, search, transition status, assign team members
 allowed-tools: [
-  "mcp__plugin_mcp-hub_atlassian__createJiraIssue",
-  "mcp__plugin_mcp-hub_atlassian__editJiraIssue",
-  "mcp__plugin_mcp-hub_atlassian__getJiraIssue",
-  "mcp__plugin_mcp-hub_atlassian__searchJiraIssuesUsingJql",
-  "mcp__plugin_mcp-hub_atlassian__transitionJiraIssue",
-  "mcp__plugin_mcp-hub_atlassian__addCommentToJiraIssue",
-  "mcp__plugin_mcp-hub_atlassian__addWorklogToJiraIssue",
-  "mcp__plugin_mcp-hub_atlassian__getTransitionsForJiraIssue",
-  "mcp__plugin_mcp-hub_atlassian__getJiraIssueTypeMetaWithFields",
-  "mcp__plugin_mcp-hub_atlassian__getJiraProjectIssueTypesMetadata",
-  "mcp__plugin_mcp-hub_atlassian__getVisibleJiraProjectsList",
-  "mcp__plugin_mcp-hub_atlassian__lookupJiraAccountId",
-  "mcp__plugin_mcp-hub_atlassian__getJiraIssueRemoteIssueLinks",
+  "mcp__plugin_nexus_atlassian__createJiraIssue",
+  "mcp__plugin_nexus_atlassian__editJiraIssue",
+  "mcp__plugin_nexus_atlassian__getJiraIssue",
+  "mcp__plugin_nexus_atlassian__searchJiraIssuesUsingJql",
+  "mcp__plugin_nexus_atlassian__transitionJiraIssue",
+  "mcp__plugin_nexus_atlassian__addCommentToJiraIssue",
+  "mcp__plugin_nexus_atlassian__addWorklogToJiraIssue",
+  "mcp__plugin_nexus_atlassian__getTransitionsForJiraIssue",
+  "mcp__plugin_nexus_atlassian__getJiraIssueTypeMetaWithFields",
+  "mcp__plugin_nexus_atlassian__getJiraProjectIssueTypesMetadata",
+  "mcp__plugin_nexus_atlassian__getVisibleJiraProjectsList",
+  "mcp__plugin_nexus_atlassian__lookupJiraAccountId",
+  "mcp__plugin_nexus_atlassian__getJiraIssueRemoteIssueLinks",
   "Bash",
   "Read",
   "Write",
@@ -24,7 +24,7 @@ allowed-tools: [
 argument-hint: [what you want to do, e.g. "create a bug ticket", "break down feature from spec.md into EPIC-123", "update story points on PROJ-123"]
 ---
 
-# Jira — MCP Hub
+# Jira — Nexus
 
 The user wants to work with Jira. Their request: $ARGUMENTS
 
@@ -32,7 +32,7 @@ The user wants to work with Jira. Their request: $ARGUMENTS
 
 ## Step 1: Check if user provided arguments
 
-If `$ARGUMENTS` is empty (user just typed `/mcp-hub:jira` with nothing else):
+If `$ARGUMENTS` is empty (user just typed `/nexus:jira` with nothing else):
 
 **Do NOT make any MCP calls.** Simply ask the user:
 
@@ -43,11 +43,11 @@ What would you like to do? Please provide one of:
 - A **Ticket ID** (e.g., XYZ-123) + what you want to do
 
 Examples:
-  /mcp-hub:jira search open bugs in XYZ
-  /mcp-hub:jira create a story in XYZ
-  /mcp-hub:jira update story points on XYZ-123 to 5
-  /mcp-hub:jira break down feature from spec.md into XYZ-100
-  /mcp-hub:jira assign XYZ-123 to user@company.com
+  /nexus:jira search open bugs in XYZ
+  /nexus:jira create a story in XYZ
+  /nexus:jira update story points on XYZ-123 to 5
+  /nexus:jira break down feature from spec.md into XYZ-100
+  /nexus:jira assign XYZ-123 to user@company.com
 ```
 
 **STOP here.** Wait for the user to respond with their request.
@@ -68,7 +68,7 @@ The user has provided arguments. Before executing, verify the Atlassian MCP is c
    This plugin bundles the config automatically. To complete setup:
    1. Restart Claude Code with this plugin loaded
    2. A browser window will open for Atlassian OAuth — authorize access to your Jira instance
-   3. Run `/mcp-hub:jira` again after authorizing
+   3. Run `/nexus:jira` again after authorizing
 
    Requirements: Node.js v18+
    ```

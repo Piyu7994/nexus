@@ -1,7 +1,7 @@
 {
-  "name": "mcp-hub",
+  "name": "nexus",
   "version": "0.1.0",
-  "description": "Claude Code plugin — extensible hub for MCP server integrations",
+  "description": "Claude Code plugin — extensible nexus for MCP server integrations",
   "private": true,
   "engines": {
     "node": ">=18.0.0"
