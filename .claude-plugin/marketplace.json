@@ -1,0 +1,17 @@
+{
+  "name": "mcp-hub",
+  "owner": {
+    "name": "Piyush"
+  },
+  "metadata": {
+    "description": "Extensible Claude Code plugin that bundles MCP servers for daily workflow tools"
+  },
+  "plugins": [
+    {
+      "name": "mcp-hub",
+      "source": "./plugin",
+      "description": "MCP server hub — Jira, Figma, Firebase and more via official MCP servers",
+      "version": "0.1.0"
+    }
+  ]
+}
