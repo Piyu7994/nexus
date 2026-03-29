@@ -1,10 +1,10 @@
 {
   "name": "nexus",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Claude Code plugin — extensible nexus for MCP server integrations",
   "private": true,
   "engines": {
     "node": ">=18.0.0"
   },
-  "keywords": ["claude-code", "plugin", "mcp", "jira", "atlassian"]
+  "keywords": ["claude-code", "plugin", "mcp", "jira", "atlassian", "figma", "design"]
 }

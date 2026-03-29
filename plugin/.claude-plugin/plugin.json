@@ -1,10 +1,10 @@
 {
   "name": "nexus",
-  "version": "0.1.0",
-  "description": "Extensible Claude Code plugin that bundles MCP servers for daily workflow tools. Start with Jira, expand to Figma, Firebase, and more.",
+  "version": "0.2.0",
+  "description": "Extensible Claude Code plugin that bundles MCP servers for daily workflow tools. Supports Jira and Figma, with more coming.",
   "author": {
     "name": "Piyush"
   },
   "license": "MIT",
-  "keywords": ["mcp", "jira", "atlassian", "productivity", "automation"]
+  "keywords": ["mcp", "jira", "atlassian", "figma", "design", "productivity", "automation"]
 }

@@ -2,7 +2,7 @@
 
 ## What This Is
 A Claude Code plugin that bundles MCP servers for daily workflow tools.
-Currently supports: Jira (via official Atlassian MCP).
+Currently supports: Jira (via official Atlassian MCP) and Figma (via official Figma MCP).
 
 ## Architecture
 - `.mcp.json` — MCP server definitions (one entry per tool)
