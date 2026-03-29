@@ -28,6 +28,16 @@ git clone https://github.com/Piyu7994/nexus.git nexus
 claude --plugin-dir /path/to/nexus/plugin
 ```
 
+## Updating
+
+```bash
+claude plugin update nexus@nexus
+```
+
+Restart your Claude Code session after updating for changes to take effect.
+
+> **Note:** `claude plugin install` re-installs the current cached version — use `update` to pull the latest.
+
 ## First-Time Setup
 
 ### Jira
