@@ -11,7 +11,7 @@
       "name": "nexus",
       "source": "./plugin",
       "description": "MCP server nexus — Jira, Figma, Firebase and more via official MCP servers",
-      "version": "0.2.0"
+      "version": "0.2.1"
     }
   ]
 }
